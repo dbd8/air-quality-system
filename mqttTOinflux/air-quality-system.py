@@ -7,13 +7,13 @@ import paho.mqtt.client as mqtt
 from influxdb import InfluxDBClient
 
 INFLUXDB_ADDRESS = '127.0.0.1'
-INFLUXDB_PORT = '8086'
+INFLUXDB_PORT = 8086
 INFLUXDB_USER = 'something'
 INFLUXDB_PASSWORD = 'something'
 INFLUXDB_DATABASE = 'F13'
 
 MQTT_ADDRESS = '127.0.0.1'
-MQTT_PORT = '1883'
+MQTT_PORT = 1883
 #MQTT_USER = 'something'
 #MQTT_PASSWORD = 'something'
 MQTT_TOPIC = 'F13/+/+'
