@@ -119,6 +119,7 @@ void loop(void)
   }
 
   client.publish("F13/office/iaq", String(iaqSensor.iaq).c_str());
+  client.publish("F13/office/iaqAccuracy", String(iaqSensor.iaqAccuracy).c_str());
   client.publish("F13/office/temperature", String(iaqSensor.temperature).c_str());
   client.publish("F13/office/pressure", String(iaqSensor.pressure).c_str());
   client.publish("F13/office/humidity", String(iaqSensor.humidity).c_str());
